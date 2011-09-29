@@ -191,7 +191,7 @@ class Ods
     end
     
     def empty?
-      nil? || value.empty?
+      value.empty?
     end
   end
 
