@@ -189,6 +189,10 @@ class Ods
     def annotation=(value)
       fetch('office:annotation/text:p').content = value
     end
+    
+    def empty?
+      nil? || value.empty?
+    end
   end
 
   class Column
